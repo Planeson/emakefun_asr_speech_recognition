@@ -1,0 +1,25 @@
+{
+    "name": "asr_speech_recognition",
+    "version": "0.0.0",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "README.md",
+        "main.blocks",
+        "main.ts",
+        "_locales/zh/asr_speech_recognition-strings.json",
+        "_locales/zh/asr_speech_recognition-jsdoc-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}

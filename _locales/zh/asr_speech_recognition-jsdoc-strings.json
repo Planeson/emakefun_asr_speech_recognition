@@ -1,0 +1,5 @@
+{
+  "emakefun.readData": "读取协议\n\n\n@returns boolean",
+  "emakefun.readData|param|cmd": "命令",
+  "emakefun.readData|param|id": "ID"
+}
