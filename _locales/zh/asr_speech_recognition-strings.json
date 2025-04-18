@@ -1,6 +1,8 @@
 {
   "emakefun.readData|block": "读取识别结果  命令码=$cmd ID=$id",
   "emakefun|block": "Emakefun",
+  "emakefun.CMD.general|block": "通用命令",
+  "emakefun.CMD.greetings|block": "语音识别命令",
   "{id:category}Emakefun": "Emakefun",
   "{id:subcategory}AsrSpeechRecognition": "ASR语音识别"
 }
