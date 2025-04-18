@@ -1,5 +1,17 @@
 //%block="Emakefun"
 namespace emakefun {
+    /**
+     * Protocol command
+     */
+
+    export enum CMD {
+        //% block="0x81"
+        general = 0x81,
+        //% block="0x82"
+        greetings = 0x82,
+    }
+
+
 
     /**
      * Read protocol
@@ -9,14 +21,14 @@ namespace emakefun {
     */
     //% block="Read Data  cmd=$cmd id=$id"
     //% subcategory="AsrSpeechRecognition"
-    //% cmd.defl=0x81 cmd.min=0x81 cmd.max=0x82
+    //% cmd.defl=CMD.general
     //% id.defl=0x01 id.min=0x01 id.max=0xFF
     //% weight=100
     //% blockGap=8
     //% color="#FFA500"
     //% icon="\uf028"
     //% inlineInputMode=inline
-    export function readData(cmd: number, id: number): boolean {
+    export function readData(cmd: CMD = CMD.general, id: number): boolean {
         let buffer = serial.readBuffer(1);//读取一个字节数据
         if (buffer[0] == 0xA5) {
             let buffer3 = serial.readBuffer(7); // 创建一个长度为8的缓冲区
