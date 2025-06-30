@@ -50,7 +50,7 @@ namespace emakefun {
             else {
                 return false;
             }
-            //serial.writeBuffer(buffer2); // 发送缓冲区数据
+            serial.writeBuffer(buffer2); // 发送缓冲区数据
         }
         return false;
     }  // 读取缓冲区数据
