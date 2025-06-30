@@ -1,3 +1,28 @@
+Fork of [https://github.com/emakefun-makecode-extensions/emakefun_asr_speech_recognition](https://github.com/emakefun-makecode-extensions/emakefun_asr_speech_recognition)  
+# Usage
+```typescript
+let id = 0
+basic.showIcon(IconNames.Happy)
+serial.redirect(
+SerialPin.USB_TX,
+SerialPin.P0,
+BaudRate.BaudRate9600
+)
+basic.forever(function () {
+    id = emakefun.getRecognizedId(emakefun.CMD.general)
+    if (id == 1) {
+        serial.writeLine("Open Smart Manager！")
+        basic.showIcon(IconNames.Heart)
+    } else if (id == 2) {
+        serial.writeLine("Turn on the air conditioner！")
+        basic.showIcon(IconNames.Yes)
+    } else if (id == 3) {
+        serial.writeLine("Turn off the air conditioner！")
+        basic.showIcon(IconNames.No)
+    }
+})
+```
+
 
 > Open this page at [https://.github.io//](https://.github.io//)
 
