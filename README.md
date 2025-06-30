@@ -22,7 +22,7 @@ basic.forever(function () {
     }
 })
 ```
-
+When the output is 0 or 43605, use the wake-up call to activate the device.
 
 > Open this page at [https://.github.io//](https://.github.io//)
 
