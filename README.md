@@ -1,4 +1,4 @@
-Fork of [https://github.com/emakefun-makecode-extensions/emakefun_asr_speech_recognition](https://github.com/emakefun-makecode-extensions/emakefun_asr_speech_recognition)  
+Fork of [emakefun_asr_speech_recognition](https://github.com/emakefun-makecode-extensions/emakefun_asr_speech_recognition)  
 # Usage
 ```typescript
 let id = 0
